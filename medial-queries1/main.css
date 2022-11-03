@@ -1,3 +1,45 @@
 body {
-  background: blanchedalmond;
+  background: lightblue;
 }
+
+.container{
+  display: flex;
+  background-color: black;
+  height: 100vh;
+}
+
+.a, .b, .c{
+  border: solid 0.1em whitesmoke;
+  background-color: grey;
+  padding: 1em;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+
+@media (min-width: 600px){
+        .container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .a{
+          width: 100%;
+         
+        }
+
+      .b {
+        width: 50%;
+       
+      }
+    }
+    
+@media (max-width: 600px){
+      .container {
+        flex-direction: column;
+      }
+  }

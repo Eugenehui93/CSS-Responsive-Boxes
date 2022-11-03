@@ -1,3 +1,83 @@
 body {
   background: papayawhip;
 }
+
+.container-1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightblue;
+
+}
+
+.container-2{
+  display:flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  background-color: lightblue;
+  min-height: 45vh;
+}
+
+.a, .b, .c, .d, .e, .f {
+  border: solid 0.1em white;
+  background-color: grey;
+  padding: 1em;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+
+}
+
+
+.a{
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.b{
+  flex-grow: 2;
+  flex-basis: 80%;
+  height: 50vh;
+}
+
+
+.c, .d, .e {
+  flex-basis: 15%;
+    
+}
+h1, h2, p{
+  text-align: center;
+  align-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+}
+
+p{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+/* Mobile Version */
+@media (max-width: 600px){
+  .container-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%;
+    max-width: 100vw;
+  }
+  .b {
+    flex-basis: 100%;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
